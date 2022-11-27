@@ -94,11 +94,11 @@ const Skills = () => {
 
           <label className="label font-semibold mt-2">
             <span className="label-text">Express.js</span>
-            <span className="label-text">70%</span>
+            <span className="label-text">80%</span>
           </label>
           <progress
             className="progress progress-warning w-full"
-            value="70"
+            value="80"
             max="100"
           ></progress>
 
