@@ -1,16 +1,17 @@
 import React from "react";
+import { BsArrowRight } from "react-icons/bs";
 
 const Header = () => {
   return (
     <div>
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 min-h-[90vh] items-center grid">
+      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20  items-center grid">
         <div className="grid gap-10 lg:grid-cols-2 items-center">
           <div className="lg:pr-10 ">
             <h5 className="mb-4 text-4xl font-extrabold leading-2">
               Hi, I'm Abdullah Sakib
               <br className="hidden md:block" />
               <span className="inline-block text-deep-purple-accent-400">
-                A Web Developer
+                A Web Developer_
               </span>
             </h5>
             <p className="mb-6 text-gray-800 font-semibold">
@@ -26,8 +27,8 @@ const Header = () => {
               Hire Me
             </button>
             <a href="https://drive.google.com/file/d/1caTfB_oYhCvb309IUlqlsLrPwP2wpoIz/view?usp=sharing">
-              <button className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-black hover:bg-yellow-200 focus:shadow-outline focus:outline-none ml-4">
-                See Resume
+              <button className="inline-flex  items-center justify-center h-12 px-6 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-black hover:bg-yellow-200 focus:shadow-outline focus:outline-none ml-4">
+                <span>See Resume</span> <BsArrowRight className="ml-2 text-xl"></BsArrowRight>
               </button>
             </a>
           </div>
