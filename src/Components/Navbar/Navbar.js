@@ -13,7 +13,7 @@ const Navbar = () => {
             className="inline-flex items-center"
           >
             <svg
-              className="w-8 text-amber-200"
+              className="w-8 text-amber-300"
               viewBox="0 0 24 24"
               strokeLinejoin="round"
               strokeWidth="2"
@@ -117,7 +117,7 @@ const Navbar = () => {
                         className="inline-flex items-center"
                       >
                         <svg
-                          className="w-8 text-deep-purple-accent-400"
+                          className="w-8 text-yellow-400"
                           viewBox="0 0 24 24"
                           strokeLinejoin="round"
                           strokeWidth="2"
@@ -132,7 +132,7 @@ const Navbar = () => {
                           <rect x="14" y="11" width="7" height="12" />
                         </svg>
                         <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Company
+                          Abdullah Sakib
                         </span>
                       </a>
                     </div>
