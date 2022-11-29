@@ -1,7 +1,5 @@
 import React from "react";
 
-//https://preview.themeforest.net/item/spirit-portfolioresume-html-template-for-developers-programmers-and-freelancers/full_screen_preview/17094383?_ga=2.34388065.1778816661.1669474020-987944383.1657089544
-
 const Skills = () => {
   return (
     <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 mb-20 items-center grid ">

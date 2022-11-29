@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 
 const GetInTouch = () => {
   return (
-    <section className="bg-gray-900 dark:bg-gray-900 px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen md:px-24 lg:px-16  min-h-[90vh] items-center grid">
+    <section className="bg-gray-900 dark:bg-gray-900 px-4 py-10  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen md:px-24 lg:px-16  min-h-[90vh] items-center grid">
       <div className="container mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-6">
           <div className="lg:w-1/2 lg:mx-6 ">
@@ -144,7 +144,7 @@ const GetInTouch = () => {
           </div>
 
           <div className="mt-8 lg:w-1/2 lg:mx-6">
-            <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-base-100 rounded-lg dark:bg-gray-900 lg:max-w-xl dark:shadow-black/50 border">
+            <div className="md:w-full px-8 py-10 mx-auto overflow-hidden bg-base-100 rounded-lg dark:bg-gray-900 lg:max-w-xl dark:shadow-black/50 border">
               <h1 className="text-lg font-medium text-gray-700">
                 Or just write me a letter here_
               </h1>
