@@ -19,13 +19,13 @@ const Header = () => {
               of Web development for both Front-end, Back-end, and the Database. I build applications using MERN stack.
               I also completed some full-stack projects.
             </p>
-            <button className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-black hover:bg-yellow-200 focus:shadow-outline focus:outline-none">
+            <button className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-black hover:bg-yellow-400 focus:shadow-outline focus:outline-none">
               {" "}
               Hire Me
             </button>
             <a href="https://drive.google.com/file/d/1caTfB_oYhCvb309IUlqlsLrPwP2wpoIz/view?usp=sharing"  rel="noreferrer"
                 target="_blank">
-              <button className="inline-flex  items-center justify-center h-12 px-6 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-black hover:bg-yellow-200 focus:shadow-outline focus:outline-none ml-4">
+              <button className="inline-flex  items-center justify-center h-12 px-6 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-black hover:bg-yellow-400 focus:shadow-outline focus:outline-none ml-4">
                 <span>See Resume</span>{" "}
                 <BsArrowRight className="ml-2 text-xl"></BsArrowRight>
               </button>

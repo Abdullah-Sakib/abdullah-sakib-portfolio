@@ -1,9 +1,36 @@
 import React from "react";
+import toast from "react-hot-toast";
 import { FaGithub } from "react-icons/fa";
 
 const GetInTouch = () => {
+  const handleSendLetter = e => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const message = form.message.value;
+    const data = {
+      name, email, message
+    };
+    fetch('https://abdullah-sakib-portfolio-server.vercel.app/letter', {
+      method: "POST",
+      headers:{
+        'content-type':'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    .then(res => res.json())
+    .then(data => {
+      if(data.success){
+        toast.success('Letter successfully delevered');
+        form.reset();
+      }
+    })
+  }
+
+
   return (
-    <section className="bg-gray-900 dark:bg-gray-900 px-4 py-10  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen md:px-24 lg:px-16  min-h-[90vh] items-center grid">
+    <section className="bg-gray-900 dark:bg-gray-900 px-4 py-10  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen md:px-24 lg:px-16  min-h-[90vh] items-center grid" id="contact">
       <div className="container mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-6">
           <div className="lg:w-1/2 lg:mx-6 ">
@@ -19,16 +46,16 @@ const GetInTouch = () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  stroke-width="2"
+                  strokeWidth="2"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
                   />
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
@@ -45,11 +72,11 @@ const GetInTouch = () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  stroke-width="2"
+                  strokeWidth="2"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
@@ -66,11 +93,11 @@ const GetInTouch = () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  stroke-width="2"
+                  strokeWidth="2"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
@@ -149,13 +176,14 @@ const GetInTouch = () => {
                 Or just write me a letter here_
               </h1>
 
-              <form className="mt-6 ">
+              <form className="mt-6 " onSubmit={handleSendLetter}>
                 <div className="flex-1">
                   <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
                     Full Name
                   </label>
                   <input
                     type="text"
+                    name="name"
                     placeholder="John Doe"
                     className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-yellow-300 dark:focus:border-blue-400 focus:ring-yellow-300 focus:outline-none focus:ring focus:ring-opacity-40"
                   />
@@ -167,6 +195,7 @@ const GetInTouch = () => {
                   </label>
                   <input
                     type="email"
+                    name="email"
                     placeholder="johndoe@example.com"
                     className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-yellow-300 dark:focus:border-blue-400 focus:ring-yellow-300 focus:outline-none focus:ring focus:ring-opacity-40"
                   />
@@ -177,12 +206,13 @@ const GetInTouch = () => {
                     Message
                   </label>
                   <textarea
+                    name="message"
                     className="block w-full h-20 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-24 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-yellow-300 dark:focus:border-blue-400 focus:ring-yellow-300 focus:outline-none focus:ring focus:ring-opacity-40"
                     placeholder="Message"
                   ></textarea>
                 </div>
 
-                <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide  capitalize transition-colors duration-300 transform bg-yellow-300 rounded-md hover:bg-yellow-200 focus:outline-none focus:ring focus:ring-black text-black focus:ring-opacity-50">
+                <button type="submit" className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide  capitalize transition-colors duration-300 transform bg-yellow-300 rounded-md hover:bg-yellow-400 focus:outline-none focus:ring focus:ring-black text-black focus:ring-opacity-50">
                   get in touch
                 </button>
               </form>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="container mx-auto px-4 md:px-8">
+    <div className="container mx-auto px-4 md:px-8 mt-24" id="projects">
       <h2 className="text-4xl font-extrabold leading-2 mb-10">
         {"<projects/>"}
       </h2>
@@ -38,7 +38,7 @@ const Projects = () => {
                 rel="noreferrer"
                 target="_blank"
               >
-                <button className="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-gray-700 hover:bg-yellow-200 focus:shadow-outline focus:outline-none">
+                <button className="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-gray-900 hover:bg-yellow-400 focus:shadow-outline focus:outline-none">
                   {" "}
                   View Site
                 </button>
@@ -49,7 +49,7 @@ const Projects = () => {
                 target="_blank"
               >
                 {" "}
-                <button className="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-gray-700 hover:bg-yellow-200 focus:shadow-outline focus:outline-none">
+                <button className="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-gray-900 hover:bg-yellow-400 focus:shadow-outline focus:outline-none">
                   {" "}
                   Client Side
                 </button>
@@ -60,7 +60,7 @@ const Projects = () => {
                 target="_blank"
               >
                 {" "}
-                <button className="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-gray-700 hover:bg-yellow-200 focus:shadow-outline focus:outline-none">
+                <button className="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-gray-900 hover:bg-yellow-400 focus:shadow-outline focus:outline-none">
                   {" "}
                   Server Side
                 </button>
@@ -100,7 +100,7 @@ const Projects = () => {
                 rel="noreferrer"
                 target="_blank"
               >
-                <button className="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-gray-700 hover:bg-yellow-200 focus:shadow-outline focus:outline-none">
+                <button className="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-gray-900 hover:bg-yellow-400 focus:shadow-outline focus:outline-none">
                   {" "}
                   View Site
                 </button>
@@ -110,7 +110,7 @@ const Projects = () => {
                 rel="noreferrer"
                 target="_blank"
               >
-                <button className="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-gray-700 hover:bg-yellow-200 focus:shadow-outline focus:outline-none">
+                <button className="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-gray-900 hover:bg-yellow-400 focus:shadow-outline focus:outline-none">
                   {" "}
                   Client Side
                 </button>
@@ -120,7 +120,7 @@ const Projects = () => {
                 rel="noreferrer"
                 target="_blank"
               >
-                <button className="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-gray-700 hover:bg-yellow-200 focus:shadow-outline focus:outline-none">
+                <button className="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-gray-900 hover:bg-yellow-400 focus:shadow-outline focus:outline-none">
                   {" "}
                   Server Side
                 </button>
@@ -157,7 +157,7 @@ const Projects = () => {
                 rel="noreferrer"
                 target="_blank"
               >
-                <button className="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-gray-700 hover:bg-yellow-200 focus:shadow-outline focus:outline-none">
+                <button className="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-gray-900 hover:bg-yellow-400 focus:shadow-outline focus:outline-none">
                   {" "}
                   View Site
                 </button>
@@ -167,7 +167,7 @@ const Projects = () => {
                 rel="noreferrer"
                 target="_blank"
               >
-                <button className="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-gray-700 hover:bg-yellow-200 focus:shadow-outline focus:outline-none">
+                <button className="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-yellow-300 text-gray-900 hover:bg-yellow-400 focus:shadow-outline focus:outline-none">
                   {" "}
                   Source
                 </button>
