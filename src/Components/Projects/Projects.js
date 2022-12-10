@@ -7,8 +7,8 @@ const Projects = () => {
         {"<projects/>"}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-14 mb-28 ">
-        <div className="card rounded-lg card-compact  bg-base-100 shadow-xl">
-          <figure>
+        <div className="card rounded-lg card-compact text-white bg-gray-900">
+          <figure >
             <img
               src="https://i.ibb.co/gSqXd0J/Screenshot-49.png"
               alt="FLYTOGRAPHER"
@@ -16,8 +16,9 @@ const Projects = () => {
           </figure>
           <div className="card-body">
             <h2 className="card-title">FLYTOGRAPHER</h2>
-            <p>This is a photographer services selling application.</p>
-            <p>
+            <p className="text-base font-semibold">This is a photographer services selling application.</p>
+            <button className="btn bg-yellow-300 hover:bg-yellow-400 text-gray-900 font-semibold mt-5">View details</button>
+            {/* <p>
               <li>
                 Dynamic cards, CRUD operations, JWT token verification, Privet
                 route, Conditional rendering.
@@ -31,8 +32,8 @@ const Projects = () => {
                 Sign in, Google Sign in, and Sign Out. Authentication was
                 handled using Firebase.
               </li>
-            </p>
-            <div className="card-actions justify-center md:justify-between gap-x-10 md:gap-0 mt-3">
+            </p> */}
+            {/* <div className="card-actions justify-center md:justify-between gap-x-10 md:gap-0 mt-3">
               <a
                 href="https://flytographer-4cc6d.web.app/"
                 rel="noreferrer"
@@ -65,11 +66,12 @@ const Projects = () => {
                   Server Side
                 </button>
               </a>
-            </div>
+            </div> */}
+            
           </div>
         </div>
 
-        <div className="card rounded-lg card-compact  bg-base-100 shadow-xl">
+        <div className="card rounded-lg card-compact  text-white bg-gray-900">
           <figure>
             <img
               src="https://i.ibb.co/6PwY6JJ/Screenshot-50.png"
@@ -78,8 +80,9 @@ const Projects = () => {
           </figure>
           <div className="card-body">
             <h2 className="card-title">LEARN PHYSICS</h2>
-            <p>This is a physics courses selling application.</p>
-            <p>
+            <p className="text-base font-semibold">This is a physics courses selling application.</p>
+            <button className="btn bg-yellow-300 hover:bg-yellow-400 text-gray-900 font-semibold mt-5">View details</button>
+            {/* <p>
               <li>
                 Firebase authentication, Course details pdf, and by clicking
                 course cards user will be redirected to the course details page.
@@ -93,8 +96,8 @@ const Projects = () => {
                 Implemented a private route so that users can not visit the
                 checkout route before Sign-in.
               </li>
-            </p>
-            <div className="card-actions justify-center md:justify-between gap-x-10 md:gap-0 mt-3">
+            </p> */}
+            {/* <div className="card-actions justify-center md:justify-between gap-x-10 md:gap-0 mt-3">
               <a
                 href="https://learn-physics-f2810.web.app/"
                 rel="noreferrer"
@@ -125,18 +128,20 @@ const Projects = () => {
                   Server Side
                 </button>
               </a>
-            </div>
+            </div> */}
+
           </div>
         </div>
 
-        <div className="card rounded-lg card-compact bg-base-100 shadow-xl">
+        <div className="card rounded-lg card-compact text-white bg-gray-900">
           <figure>
             <img src="https://i.ibb.co/805X1kr/Screenshot-48.png" alt="Shoes" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">PROGRAMMING QUIZ</h2>
-            <p>Quiz app for practice programming concepts</p>
-            <p>
+            <p className="text-base font-semibold">Quiz app for practice programming concepts</p>
+            <button className="btn bg-yellow-300 hover:bg-yellow-400 text-gray-900 font-semibold mt-5">View details</button>
+            {/* <p>
               <li>
                 An application for practicing programming concepts where people
                 can test their knowledge.
@@ -150,8 +155,8 @@ const Projects = () => {
                 This application counts all the wrong attempts and right
                 attempts and shows them in the sidebar.
               </li>
-            </p>
-            <div className="card-actions justify-between mt-3">
+            </p> */}
+            {/* <div className="card-actions justify-between mt-3">
               <a
                 href="https://thriving-stardust-a28e7a.netlify.app/"
                 rel="noreferrer"
@@ -172,7 +177,8 @@ const Projects = () => {
                   Source
                 </button>
               </a>
-            </div>
+            </div> */}
+
           </div>
         </div>
       </div>
