@@ -20,21 +20,21 @@ const Skills = () => {
 
           <label className="label font-semibold mt-2">
             <span className="label-text">CSS3</span>
-            <span className="label-text">85%</span>
-          </label>
-          <progress
-            className="progress progress-warning w-full"
-            value="85"
-            max="100"
-          ></progress>
-
-          <label className="label font-semibold mt-2">
-            <span className="label-text">JavaScript</span>
             <span className="label-text">80%</span>
           </label>
           <progress
             className="progress progress-warning w-full"
             value="80"
+            max="100"
+          ></progress>
+
+          <label className="label font-semibold mt-2">
+            <span className="label-text">JavaScript</span>
+            <span className="label-text">70%</span>
+          </label>
+          <progress
+            className="progress progress-warning w-full"
+            value="70"
             max="100"
           ></progress>
 
@@ -50,11 +50,11 @@ const Skills = () => {
 
           <label className="label font-semibold mt-2">
             <span className="label-text">Tailwind CSS</span>
-            <span className="label-text">95%</span>
+            <span className="label-text">90%</span>
           </label>
           <progress
             className="progress progress-warning w-full"
-            value="95"
+            value="90"
             max="100"
           ></progress>
         </div>
@@ -62,26 +62,16 @@ const Skills = () => {
         <div className="md:w-[45%] ">
           <label className="label font-semibold ">
             <span className="label-text">React.js</span>
-            <span className="label-text">85%</span>
-          </label>
-          <progress
-            className="progress progress-warning w-full "
-            value="85"
-            max="100"
-          ></progress>
-
-          <label className="label font-semibold mt-2">
-            <span className="label-text">Git</span>
             <span className="label-text">80%</span>
           </label>
           <progress
-            className="progress progress-warning w-full"
+            className="progress progress-warning w-full "
             value="80"
             max="100"
           ></progress>
 
           <label className="label font-semibold mt-2">
-            <span className="label-text">Node.js</span>
+            <span className="label-text">Git</span>
             <span className="label-text">60%</span>
           </label>
           <progress
@@ -91,22 +81,32 @@ const Skills = () => {
           ></progress>
 
           <label className="label font-semibold mt-2">
-            <span className="label-text">Express.js</span>
-            <span className="label-text">80%</span>
+            <span className="label-text">Node.js</span>
+            <span className="label-text">50%</span>
           </label>
           <progress
             className="progress progress-warning w-full"
-            value="80"
+            value="50"
+            max="100"
+          ></progress>
+
+          <label className="label font-semibold mt-2">
+            <span className="label-text">Express.js</span>
+            <span className="label-text">60%</span>
+          </label>
+          <progress
+            className="progress progress-warning w-full"
+            value="60"
             max="100"
           ></progress>
 
           <label className="label font-semibold mt-2">
             <span className="label-text">MongoDB</span>
-            <span className="label-text">82%</span>
+            <span className="label-text">72%</span>
           </label>
           <progress
             className="progress progress-warning w-full"
-            value="82"
+            value="72"
             max="100"
           ></progress>
         </div>

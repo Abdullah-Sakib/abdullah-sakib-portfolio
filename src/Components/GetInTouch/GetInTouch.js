@@ -1,36 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import { FaGithub } from "react-icons/fa";
 
 const GetInTouch = () => {
-  const handleSendLetter = e => {
-    e.preventDefault();
-    const form = e.target;
-    const name = form.name.value;
-    const email = form.email.value;
-    const message = form.message.value;
-    const data = {
-      name, email, message
-    };
-    fetch('https://abdullah-sakib-portfolio-server.vercel.app/letter', {
-      method: "POST",
-      headers:{
-        'content-type':'application/json'
-      },
-      body: JSON.stringify(data)
-    })
-    .then(res => res.json())
-    .then(data => {
-      if(data.success){
-        toast.success('Letter successfully delevered');
-        form.reset();
-      }
-    })
-  }
+  const form = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EmailJS_service_id,
+        process.env.REACT_APP_EmailJS_template_id,
+        form.current,
+        process.env.REACT_APP_EmailJS_public_key
+      )
+      .then(
+        (result) => {
+          toast.success("Message send successfully. You will get response very soon.")
+        },
+        (error) => {
+          toast.error("Something went wrong. Please try again.")
+        }
+      );
+      e.target.reset();
+  };
 
   return (
-    <section className="bg-gray-900 dark:bg-gray-900 px-4 py-10  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen md:px-24 lg:px-16  min-h-[90vh] items-center grid" id="contact">
+    <section
+      className="bg-gray-900 dark:bg-gray-900 px-4 py-10  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen md:px-24 lg:px-16  min-h-[90vh] items-center grid"
+      id="contact"
+    >
       <div className="container mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-6">
           <div className="lg:w-1/2 lg:mx-6 ">
@@ -176,14 +177,15 @@ const GetInTouch = () => {
                 Or just write me a letter here_
               </h1>
 
-              <form className="mt-6 " onSubmit={handleSendLetter}>
+              <form className="mt-6 " ref={form} onSubmit={sendEmail}>
                 <div className="flex-1">
                   <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
                     Full Name
                   </label>
                   <input
                     type="text"
-                    name="name"
+                    name="user_name"
+                    required
                     placeholder="John Doe"
                     className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-yellow-300 dark:focus:border-blue-400 focus:ring-yellow-300 focus:outline-none focus:ring focus:ring-opacity-40"
                   />
@@ -195,7 +197,8 @@ const GetInTouch = () => {
                   </label>
                   <input
                     type="email"
-                    name="email"
+                    name="user_email"
+                    required
                     placeholder="johndoe@example.com"
                     className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-yellow-300 dark:focus:border-blue-400 focus:ring-yellow-300 focus:outline-none focus:ring focus:ring-opacity-40"
                   />
@@ -207,12 +210,16 @@ const GetInTouch = () => {
                   </label>
                   <textarea
                     name="message"
+                    required
                     className="block w-full h-20 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-24 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-yellow-300 dark:focus:border-blue-400 focus:ring-yellow-300 focus:outline-none focus:ring focus:ring-opacity-40"
                     placeholder="Message"
                   ></textarea>
                 </div>
 
-                <button type="submit" className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide  capitalize transition-colors duration-300 transform bg-yellow-300 rounded-md hover:bg-yellow-400 focus:outline-none focus:ring focus:ring-black text-black focus:ring-opacity-50">
+                <button
+                  type="submit"
+                  className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide  capitalize transition-colors duration-300 transform bg-yellow-300 rounded-md hover:bg-yellow-400 focus:outline-none focus:ring focus:ring-black text-black focus:ring-opacity-50"
+                >
                   get in touch
                 </button>
               </form>
