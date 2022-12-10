@@ -220,7 +220,7 @@ const GetInTouch = () => {
                   type="submit"
                   className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide  capitalize transition-colors duration-300 transform bg-yellow-300 rounded-md hover:bg-yellow-400 focus:outline-none focus:ring focus:ring-black text-black focus:ring-opacity-50"
                 >
-                  get in touch
+                  get in touch_
                 </button>
               </form>
             </div>

@@ -3,11 +3,11 @@ import React, { useState } from "react";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-900 sticky top-0 z-30">
       <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <a
-            href="/"
+            href="#header"
             aria-label="Company"
             title="Company"
             className="inline-flex items-center"
