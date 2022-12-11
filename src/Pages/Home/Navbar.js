@@ -1,13 +1,14 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="bg-gray-900 sticky top-0 z-30">
+    <div className="bg-gray-900 ">
       <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
-          <a
-            href="#header"
+          <Link
+            to='/'
             aria-label="Company"
             title="Company"
             className="inline-flex items-center"
@@ -30,7 +31,7 @@ const Navbar = () => {
             <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
               Abdullah Sakib
             </span>
-          </a>
+          </Link>
           <ul className=" items-center hidden space-x-8 lg:flex">
             <li>
               <a

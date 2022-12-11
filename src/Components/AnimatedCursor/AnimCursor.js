@@ -5,12 +5,12 @@ const AnimCursor = () => {
   return (
     <div>
       <AnimatedCursor
+      className="z-50"
         innerSize={8}
         outerSize={12}
         color="202, 138, 4"
         outerAlpha={0.2}
         hasBlendMode={true}
-        
         innerScale={0.9}
         outerScale={5}
         clickables={[
@@ -21,6 +21,7 @@ const AnimCursor = () => {
           'input[type="submit"]',
           'input[type="image"]',
           "label[for]",
+          "span",
           "select",
           "textarea",
           "button",
