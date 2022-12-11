@@ -6,7 +6,7 @@ const projects = [
     id: 1,
     name: "MAKE BETTER USE",
     type: "This is a camera reselling application.",
-    img: "https://i.ibb.co/805X1kr/Screenshot-48.png",
+    img: "https://i.ibb.co/K7fZNd8/Screenshot-61.png",
   },
   {
     id: 2,

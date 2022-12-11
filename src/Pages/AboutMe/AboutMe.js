@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const AboutMe = () => {
   return (
@@ -14,18 +14,16 @@ const AboutMe = () => {
               </span>
             </h5>
             <p className="mb-6 text-gray-800 font-semibold">
-              For the past 6 months, I am learning and building web applications. Now I have strong knowledge
-              of Web development for both Front-end, Back-end, and the Database. I build applications using MERN stack.
-              I also completed some full-stack projects.
+              I love to work with MERN stack. I am passionate to learn new
+              technologies and implement my knowledge to solve real life
+              problems. I have completed some full-stack projects.
             </p>
 
             <p className="mb-6 text-gray-800 font-semibold">
-            For the past 6 months, I am learning and building web applications. Now I have strong knowledge
-              of Web development for both Front-end, Back-end, and the Database. I build applications using MERN stack.
-              I also completed some full-stack projects.
+              Learning and building new thing is a passion of mine. Besides my
+              Developer life I love to travel, reading books, collaborate with
+              people.
             </p>
-         
-           
           </div>
 
           <div>
