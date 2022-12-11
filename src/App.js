@@ -2,6 +2,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import AnimCursor from "./Components/AnimatedCursor/AnimCursor";
 import Main from "./layout/Main";
+import AboutMe from "./Pages/AboutMe/AboutMe";
+import Blogs from "./Pages/Blogs/Blogs";
 import Home from "./Pages/Home/Home";
 import ProjectDetails from "./Pages/ProjectDetails/ProjectDetails";
 
@@ -13,6 +15,14 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>
+      },
+      {
+        path: "aboutme",
+        element: <AboutMe></AboutMe>
+      },
+      {
+        path: "blogs",
+        element: <Blogs></Blogs>
       },
       {
         path: "/projectDetails/:id",

@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <Link
-            to='/'
+            to="/"
             aria-label="Company"
             title="Company"
             className="inline-flex items-center"
@@ -35,27 +35,28 @@ const Navbar = () => {
           <ul className=" items-center hidden space-x-8 lg:flex">
             <li>
               <a
-                href="#skills"
-                className="font-medium tracking-wide text-gray-100 hover:text-yellow-300 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Skills
-              </a>
-            </li>
-            <li>
-              <a
-                href="#projects"
-                className="font-medium tracking-wide text-gray-100 hover:text-yellow-300  transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
                 href="#contact"
                 className="font-medium tracking-wide text-gray-100 hover:text-yellow-300  transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Contact me
               </a>
+            </li>
+            <li>
+              <Link
+                to="/aboutme"
+                className="font-medium tracking-wide text-gray-100 hover:text-yellow-300  transition-colors duration-200 hover:text-teal-accent-400"
+              >
+                About me
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/blogs"
+                className="font-medium tracking-wide text-gray-100 hover:text-yellow-300 transition-colors duration-200 hover:text-teal-accent-400"
+              >
+                Blogs
+              </Link>
             </li>
           </ul>
           <div className="lg:hidden">
@@ -85,8 +86,8 @@ const Navbar = () => {
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <a
-                        href="/"
+                      <Link
+                        to="/"
                         aria-label="Company"
                         title="Company"
                         className="inline-flex items-center"
@@ -109,7 +110,7 @@ const Navbar = () => {
                         <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                           Abdullah Sakib
                         </span>
-                      </a>
+                      </Link>
                     </div>
                     <div>
                       <button
@@ -130,20 +131,20 @@ const Navbar = () => {
                   <nav>
                     <ul className="space-y-4 ">
                       <li>
-                        <a
-                          href="#skills"
+                        <Link
+                          to="/blogs"
                           className="font-medium tracking-wide  transition-colors duration-200 hover:text-teal-accent-400"
                         >
-                          Skills
-                        </a>
+                          Blogs
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="#projects"
+                        <Link
+                          to="aboutme"
                           className="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
                         >
-                          Projects
-                        </a>
+                          About me
+                        </Link>
                       </li>
                       <li>
                         <a
