@@ -173,7 +173,7 @@ const GetInTouch = () => {
 
           <div className="mt-8 lg:w-1/2 lg:mx-6">
             <div className="md:w-full px-8 py-10 mx-auto overflow-hidden bg-base-100 rounded-lg dark:bg-gray-900 lg:max-w-xl dark:shadow-black/50 border">
-              <h1 className="text-lg font-medium text-gray-700">
+              <h1 className="text-lg font-medium text-gray-700 dark:text-gray-200">
                 Or just write me a letter here_
               </h1>
 

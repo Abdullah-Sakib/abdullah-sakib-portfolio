@@ -25,7 +25,7 @@ const projects = [
 const Projects = () => {
   return (
     <div className="container mx-auto px-4 md:px-8 mt-24" id="projects">
-      <h2 className="text-4xl font-extrabold leading-2 mb-10">
+      <h2 className="text-4xl font-extrabold leading-2 mb-10 dark:text-gray-200">
         {"<projects/>"}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-14 mb-28 ">
